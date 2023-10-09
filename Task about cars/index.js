@@ -107,9 +107,7 @@ function createCarsContainer(car){
 cars.forEach((car)=> createCarsContainer(car));
 
 
-const bikes = data
-.filter(item => item.type === 'bike')
-.map(({type, price, brand, image, maxSpeed}) => new Bike(type, price, brand, image, maxSpeed));
+const bikes = data.filter(item => item.type === 'bike').map(({type, price, brand, image, maxSpeed}) => new Bike(type, price, brand, image, maxSpeed));
 
 const bikesContainer = document.querySelector('.moto');
 
